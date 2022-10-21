@@ -1,0 +1,35 @@
+body {
+    margin:0;
+    font-family:"Hiragino Kaku Gothic ProN";
+}
+
+a {
+    text-decoration:none;
+}
+
+header {
+    height:100px;
+    background-color:rgba(0,0,0,0.8);
+}
+
+.logo {
+    width:235px;
+}
+
+.top-wrapper {
+    padding-top:50px;
+    padding-bottom:150px;
+    background-image:url(mityu.png);
+    background-size:cover;
+    text-align:center;
+    color:black;
+}
+
+.top-wrapper h1 {
+    font-size:70px;
+}
+
+.top-wrapper p {
+    font-size:30px;
+    font-weight:bold; 
+}
