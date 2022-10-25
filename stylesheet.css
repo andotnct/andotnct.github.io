@@ -1,6 +1,10 @@
 body {
     margin:0;
-    font-family:"Hiragino Kaku Gothic ProN";
+    font-family: 'Comic Sans MS';
+}
+
+input,textarea,select{
+    font-family: 'Comic Sans MS';
 }
 
 a {
@@ -27,6 +31,7 @@ header {
     position:absolute;
     top:-30px;
     left:10px;
+    font-family:'Times New Roman';
 }
 
 .logo-sub {
@@ -84,27 +89,29 @@ header {
 .top-wrapper {
     background-image:url(mityu.png);
     background-size:cover;
+    text-align:center;
+    background-position: center center;
 }
 
 .top-container {
     text-align:center;
     top:0;
     padding-top:150px;
-    padding-bottom:100px;
+    padding-bottom:10px;
     color:white;
 }
 
 .top-wrapper h1 {
     background-color:rgba(0,0,0,1);
-    padding:20px 100px;
+    padding:5px 60px;
     border-radius:100px;
-    font-size:80px;
+    font-size:50px;
     display:inline-block;
     opacity:0.7;
 }
 
 .top-wrapper p {
-    font-size:35px;
+    font-size:30px;
     font-weight:bold; 
     -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
