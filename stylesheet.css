@@ -1,14 +1,19 @@
 body {
   margin: 0;
-  font-family: "Comic Sans MS";
+  font-family: "Hiragino Sans";
 }
 
 input, textarea, select {
-  font-family: "Comic Sans MS";
+  font-family: "Hiragino Sans";
 }
 
 a {
   text-decoration: none;
+
+
+  
+
+
 }
 
 header {
@@ -18,67 +23,72 @@ header {
   position: fixed;
   top: 0;
 }
+
 header .header-left {
   float: left;
 }
-header .header-left .logo {
-  padding-left: 20px;
-  width: 210px;
-  color: white;
-  font-size: 50px;
-  position: absolute;
-  top: -30px;
-  left: 10px;
-  font-family: "Times New Roman";
+
+header .header-left .header-left-logo {
+  padding-top: 5px;
+  padding-left: 10px;
+  width: 190px;
 }
-header .header-left .logo-sub {
-  position: relative;
-  top: 30px;
-  left: 60px;
-  color: white;
-}
+
 header .header-right {
   float: right;
   position: relative;
   color: white;
+  margin-right: 20px;
 }
+
 header .header-right .header-right-logo {
   padding-top: 32px;
-  padding-right: 10px;
+  font-size: 25px;
+  line-height: 25px;
+  margin: auto 0;
 }
+
 header .header-right .twitter {
   font-size: 20px;
-  margin-right: 30px;
+  line-height: 15px;
+  margin-right: 2px;
   color: white;
-  padding: 10px 20px;
-  border-radius: 50px;
+  padding: 7px 7px;
+  border-radius: 5px;
   opacity: 0.8;
   background-color: rgb(0, 195, 255);
 }
+
 header .header-right .twitter:hover {
   opacity: 1;
 }
+
 header .header-right .youtube {
   font-size: 20px;
-  margin-right: 30px;
+  line-height: 15px;
+  margin-right: 2px;
   color: white;
-  padding: 10px 20px;
-  border-radius: 50px;
+  padding: 7px 7px;
+  border-radius: 5px;
   opacity: 0.8;
   background-color: red;
 }
+
 header .header-right .youtube:hover {
   opacity: 1;
 }
+
 header .header-right .blog {
   font-size: 20px;
-  margin-right: 30px;
+  line-height: 15px;
+  margin-right: 2px;
   color: white;
-  padding: 10px 20px;
-  border-radius: 50px;
+  padding: 7px 7px;
+  border-radius: 5px;
   opacity: 0.8;
   background-color: orange;
 }
+
 header .header-right .blog:hover {
   opacity: 1;
 }
@@ -89,6 +99,7 @@ header .header-right .blog:hover {
   text-align: center;
   background-position: center center;
 }
+
 .top-wrapper .top-container {
   text-align: center;
   top: 0;
@@ -96,6 +107,7 @@ header .header-right .blog:hover {
   padding-bottom: 10px;
   color: white;
 }
+
 .top-wrapper .top-container h1 {
   background-color: black;
   padding: 5px 60px;
@@ -104,8 +116,11 @@ header .header-right .blog:hover {
   display: inline-block;
   opacity: 0.7;
 }
+
 .top-wrapper .top-container p {
   font-size: 30px;
   font-weight: bold;
   -webkit-text-stroke: 1px rgb(0, 0, 0);
-}/*# sourceMappingURL=stylesheet.css.map */
+}
+
+/*# sourceMappingURL=stylesheet.css.map */
