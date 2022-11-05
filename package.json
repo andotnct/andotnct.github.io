@@ -1,6 +1,6 @@
 {
   "name": "app-dir",
-  "homepage": "https://andotnct.github.io/",
+  "homepage": "https://andotnct.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
