@@ -34,7 +34,7 @@ const Home = () => {
         <div className="h-screen bg-yellow-400">          
           <div className="flex justify-center text-4xl flex-col items-center">
             <div>
-              ワイが作った究極のタイピングゲーム
+              ワイとタイピングで勝負！（仮
             </div>
             <div>
               <Link to="/game">
