@@ -9,6 +9,10 @@ const Game = () => {
         frameworkUrl: "./unityBuild/typing_build.framework.js",
         codeUrl: "./unityBuild/typing_build.wasm"
     })
+
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    }, []);
     
     return (
       <div className="h-screen flex items-center m-14 flex-col">
