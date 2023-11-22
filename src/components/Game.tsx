@@ -17,7 +17,7 @@ const Game = () => {
         </div>
         <Unity unityProvider={unityProvider} style={{ width: 800, height: 600 }}/>
         <div>
-          絶賛制作中です(^_^;)
+          制作中です(^_^;)
         </div>
       </div>
     );
