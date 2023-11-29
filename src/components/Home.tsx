@@ -5,7 +5,7 @@ import Game from "./Game";
 const Home = () => {
   return (
       <div className="App w-screen">
-        <div className="h-screen bg-green-400 flex justify-center items-center font-extrabold text-6xl md:text-8xl text-white">
+        <div className="h-screen bg-green-400 flex justify-center items-center font-extrabold text-5xl md:text-8xl text-white">
             Portfolio(^_^;)
         </div>
         <div className="h-screen flex items-center justify-center bg-red-400">
