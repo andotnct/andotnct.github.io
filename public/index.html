@@ -27,7 +27,7 @@
     const path = sessionStorage.getItem('path');
 
     // pathが存在し、かつ、/andooo.dev/gameにアクセスした場合
-    if (path && path === '/andooo.dev/game') {
+    if (path && path === '/game') {
       sessionStorage.removeItem('path');
       window.history.replaceState(null, null, './game');
     }
