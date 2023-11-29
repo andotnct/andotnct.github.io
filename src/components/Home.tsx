@@ -4,19 +4,19 @@ import Game from "./Game";
 
 const Home = () => {
   return (
-      <div className="App">
-        <div className="h-screen bg-green-400 flex justify-center items-center font-extrabold text-8xl text-white">
+      <div className="App w-screen">
+        <div className="h-screen bg-green-400 flex justify-center items-center font-extrabold text-6xl md:text-8xl text-white">
             Portfolio(^_^;)
         </div>
         <div className="h-screen flex items-center justify-center bg-red-400">
-          <div className="flex justify-center">
-            <img src="./icon.jpg" className="w-40"></img>
-            <div className="mx-8 text-left">
+          <div className="md:flex">
+            <img src="./icon.jpg" className="w-40 block m-auto"></img>
+            <div className="mx-8 text-left my-4 md:my-0">
               <div className="text-4xl font-bold">
                 あんどー
               </div>
               東京都出身<br />
-              東京工業高等専門学校 情報工学科 卒<br />
+              東京工業高等専門学校 情報工学科卒<br />
               東京大学工学部 システム創成学科 在籍<br />
               <a href="https://twitter.com/ando_tnct" target="_blank">
                 <div>
