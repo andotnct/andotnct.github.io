@@ -5,7 +5,7 @@ import Game from "./Game";
 const Home = () => {
   return (
       <div className="App">
-        <div className="h-screen bg-green-400 flex justify-center items-center font-extrabold text-8xl text-gray-100">
+        <div className="h-screen bg-green-400 flex justify-center items-center font-extrabold text-8xl text-white">
             Portfolio(^_^;)
         </div>
         <div className="h-screen flex items-center justify-center bg-red-400">
@@ -32,9 +32,9 @@ const Home = () => {
           </div>
         </div>
         <div className="h-screen bg-yellow-400">          
-          <div className="flex justify-center text-4xl flex-col items-center">
-            <div>
-              ワイとタイピングで勝負！（仮
+          <div className="flex justify-center flex-col items-center">
+            <div className="m-4 text-white font-bold text-6xl">
+              Works
             </div>
             <div>
               <Link to="/game">
