@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Unity, useUnityContext } from "react-unity-webgl"
+import Header from "./Header";
 
 
 const Game = () => {
@@ -15,13 +16,17 @@ const Game = () => {
     }, []);
     
     return (
-      <div className="h-screen flex items-center m-14 flex-col">
-        <div className="text-4xl font-bold">
-          ワイと勝負！（仮
-        </div>
-        <Unity unityProvider={unityProvider} style={{ width: 800, height: 600 }}/>
-        <div>
-          制作中です(^_^;)
+      
+      <div className="h-screen bg-blue-400 relative">
+        <Header />
+        <div className="my-20 flex items-center flex-col absolute top-0 left-0 right-0 bottom-0 ">
+          <div className="text-5xl font-bold">
+            タイピングゲーム（仮
+          </div>
+          <div className="relative">
+            <Unity unityProvider={unityProvider} style={{ width: 800, height: 600 }}/>
+            <div className="text-4xl flex justify-center items-center z-10">画面が表示されるまで数秒お待ちください</div>
+          </div>
         </div>
       </div>
     );
