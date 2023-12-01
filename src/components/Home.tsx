@@ -1,14 +1,18 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import Game from "./Game";
+import Header from "./Header";
 
 const Home = () => {
   return (
       <div className="App None">
-        <div className="h-screen bg-green-400 flex justify-center items-center font-extrabold text-5xl md:text-8xl text-white">
+        <div className="h-screen bg-green-400 relative" id="top">
+          <Header />
+          <div className="font-extrabold text-5xl md:text-8xl text-white absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center pointer-events-none">
             Portfolio(^_^;)
+          </div>
         </div>
-        <div className="h-screen flex items-center justify-center bg-red-400">
+        <div className="h-screen flex items-center justify-center bg-red-400" id="profile">
           <div className="md:flex">
             <img src="./icon.jpg" className="w-40 block m-auto"></img>
             <div className="mx-8 text-left my-4 md:my-0">
@@ -31,7 +35,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="h-screen bg-yellow-400">          
+        <div className="h-screen bg-yellow-400" id="works">          
           <div className="flex justify-center flex-col items-center">
             <div className="m-4 text-white font-bold text-6xl">
               Works
