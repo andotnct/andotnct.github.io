@@ -12,8 +12,8 @@ const Header = () => {
 
     return (
         <div className="fixed top-0 w-screen">
-            <div className="h-16 bg-white bg-opacity-70 flex justify-between px-64">
-                <div className="flex items-center">
+            <div className="h-16 bg-white bg-opacity-70 flex justify-center md:justify-between md:px-64">
+                <div className="hidden md:block flex items-center">
                     {isRoot ? (
                         <AnchorLink href="#top">
                             <button>
