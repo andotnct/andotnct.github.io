@@ -25,7 +25,7 @@ const Game = () => {
           </div>
           <div className="relative">
             <Unity unityProvider={unityProvider} style={{ width: 800, height: 600 }}/>
-            <div className="text-4xl flex justify-center items-center z-10">画面が表示されるまで数秒お待ちください</div>
+            <div className="text-2xl md:text-4xl flex justify-center items-center z-10">画面が表示されるまで数秒お待ちください</div>
           </div>
         </div>
       </div>
