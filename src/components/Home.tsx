@@ -1,52 +1,75 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-import Game from "./Game";
 import Header from "./Header";
+import BackgroundMovie from "./BackgroundMovie";
+import Work from "./Work";
+import Modal from 'react-modal';
 
 const Home = () => {
+  const topBackground: React.CSSProperties = {
+    background: 'rgb(255,255,255)',
+    backgroundImage: 'radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%)',
+  };
+
+  const profileBackground: React.CSSProperties = {
+    backgroundImage: 'url("./bg-profile3.webp")',
+    backgroundRepeat: "repeat",
+    backgroundPosition: 'center',
+  };
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
+
+
+
   return (
-      <div className="App None">
-        <div className="h-screen bg-green-400 relative" id="top">
-          <Header />
-          <div className="font-extrabold text-5xl md:text-8xl text-white absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center pointer-events-none">
-            Portfolio(^_^;)
-          </div>
-        </div>
-        <div className="h-screen flex items-center justify-center bg-red-400" id="profile">
-          <div className="md:flex">
-            <img src="./icon.jpg" className="w-40 block m-auto"></img>
-            <div className="mx-8 text-left my-4 md:my-0">
-              <div className="text-4xl font-bold">
-                あんどー
+      <div className="App None h-screen" id="top">
+        <BackgroundMovie />
+            <div className="h-screen flex items-center justify-center">
+              <div className="h-5/6 w-5/6 relative" style={topBackground}>
+                <Header />
+                <div className="font-light text-5xl md:text-8xl absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center pointer-events-none text-black">
+                  Andooo's Portfolio
+                </div>
               </div>
-              東京都出身<br />
-              東京工業高等専門学校 情報工学科卒<br />
-              東京大学工学部 システム創成学科 在籍<br />
-              <a href="https://twitter.com/ando_tnct" target="_blank">
-                <div>
-                ■Twitter <p className="text-blue-500 hover:underline" style={{ display: 'inline' }}>https://twitter.com/ando_tnct</p>
+            </div>
+          <div className="h-screen relative bg-black text-white bg-opacity-90" id="profile">
+            <div className="flex items-center justify-center h-full">
+              <div className="md:flex">
+                <img src="./icon.jpg" className="w-40 block m-auto"></img>
+                <div className="mx-8 text-left my-4 md:my-0">
+                  <div className="text-4xl font-bold">
+                    あんどー
+                  </div>
+                  東京都出身<br />
+                  東京工業高等専門学校 情報工学科 卒業<br />
+                  東京大学工学部 システム創成学科 在籍<br />
+                  <a href="https://twitter.com/ando_tnct" target="_blank">
+                    <div>
+                    ■Twitter <p className="text-blue-500 hover:underline" style={{ display: 'inline' }}>https://twitter.com/ando_tnct</p>
+                    </div>
+                  </a>
+                  <a href="https://www.youtube.com/@andooodev" target="_blank">
+                    <div>
+                      ■YouTube <p className="text-blue-500 hover:underline" style={{ display: 'inline' }}>https://www.youtube.com/@andooodev</p>
+                    </div>
+                  </a>
                 </div>
-              </a>
-              <a href="https://www.youtube.com/@andooodev" target="_blank">
-                <div>
-                  ■YouTube <p className="text-blue-500 hover:underline" style={{ display: 'inline' }}>https://www.youtube.com/@andooodev</p>
-                </div>
-              </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="h-screen bg-yellow-400" id="works">          
-          <div className="flex justify-center flex-col items-center">
-            <div className="m-4 text-white font-bold text-6xl">
-              Works
-            </div>
-            <div>
-              <Link to="/game">
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold px-5 py-1 rounded text-4xl">遊ぶ</button>
-              </Link>
+          <div className="h-screen relative" id="works">          
+            <div className="flex justify-center flex-col items-center">
+              <div className="bg-black bg-opacity-70 mt-20 text-white font-bold text-5xl md:text-6xl px-16 md:px-20 py-1 rounded-full">
+                WORKS
+              </div>
+              <div className="my-8 md:flex">
+                <Work title="タイピングゲーム（仮" explanation="開発中ですが、進捗があり次第アップデートしていきます。" useTech="Unity, C#" link="/game" linktext="andooo.dev/game" codelink="整備中" img="./worksImg/typing.jpg"/>
+                <Work title="Vegeoku紹介動画" explanation="第33回高専門プロコンに出場した際に制作した作品紹介動画です。" useTech="AviUtl" link="https://www.youtube.com/watch?v=fOkGEEy6dAE" linktext="https://www.youtube.com/watch?v=fOkGEEy6dAE" codelink={null} img="./worksImg/vegeoku.jpg"/>
+              </div>
             </div>
           </div>
-        </div>
       </div>
   );
 };

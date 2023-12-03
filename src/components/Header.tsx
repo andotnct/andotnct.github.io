@@ -11,7 +11,7 @@ const Header = () => {
     const isRoot = currentPath === "/";
 
     return (
-        <div className="fixed top-0 w-screen">
+        <div className="fixed top-0 w-screen z-50 left-0">
             <div className="h-16 bg-white bg-opacity-70 flex justify-center md:justify-between md:px-64">
                 <div className="hidden md:block flex items-center">
                     {isRoot ? (
