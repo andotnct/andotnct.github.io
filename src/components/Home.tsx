@@ -66,8 +66,8 @@ const Home = () => {
               </div>
               <div className="my-8 md:flex">
               <Work title="Andooo's Portfolio" explanation="このホームページです。フロントの技術を身につけたいと思い作り始めました。背景の動画はAviUtlで作っています。" useTech="Node.js, TypeScript, React, Tailwind CSS" link="andooo.dev" linktext="andooo.dev" codelink="https://github.com/andotnct/andotnct.github.io" img="./worksImg/homepage.png"/>
-                <Work title="タイピングゲーム（仮" explanation="開発中ですが、進捗があり次第アップデートしていきます。" useTech="Unity, C#" link="/game" linktext="andooo.dev/game" codelink="整備中" img="./worksImg/typing.jpg"/>
-                <Work title="Vegeoku紹介動画" explanation="第33回高専門プロコンに出場した際に制作した作品紹介動画です。" useTech="AviUtl" link="https://www.youtube.com/watch?v=fOkGEEy6dAE" linktext="https://www.youtube.com/watch?v=fOkGEEy6dAE" codelink={null} img="./worksImg/vegeoku.jpg"/>
+                <Work title="タイピングゲーム（仮" explanation="ユーザーのタイピング記録からゴーストを生成し、擬似的にタイピング対決ができるゲームを開発中です。進捗があり次第アップデートしていきます。" useTech="Unity, C#" link="/game" linktext="andooo.dev/game" codelink="整備中" img="./worksImg/typing.jpg"/>
+                <Work title="Vegeoku紹介動画" explanation="第33回高専プロコンに出場した際に制作した作品紹介動画です。中学の頃は無限に動画編集に時間を捧げていましたが、こんなところで役立てて良かったです。" useTech="AviUtl" link="https://www.youtube.com/watch?v=fOkGEEy6dAE" linktext="https://www.youtube.com/watch?v=fOkGEEy6dAE" codelink={null} img="./worksImg/vegeoku.jpg"/>
               </div>
             </div>
           </div>
