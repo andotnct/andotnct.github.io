@@ -9,6 +9,8 @@ const Home = () => {
   const topBackground: React.CSSProperties = {
     background: 'rgb(255,255,255)',
     backgroundImage: 'radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%)',
+    opacity: "0.95",
+    boxShadow: "0px 0px 10px 10px rgba(0,0,0,0.95)",
   };
 
   const profileBackground: React.CSSProperties = {
@@ -27,12 +29,12 @@ const Home = () => {
       <div className="App None h-screen" id="top">
         <BackgroundMovie />
             <div className="h-screen flex items-center justify-center">
-              <div className="h-5/6 w-5/6 relative" style={topBackground}>
-                <Header />
-                <div className="font-light text-5xl md:text-8xl absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center pointer-events-none text-black">
-                  Andooo's Portfolio
+                <div className="h-5/6 w-5/6 relative" style={topBackground}>
+                  <Header />
+                  <div className="font-light text-5xl md:text-8xl absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center pointer-events-none text-black">
+                    Andooo's Portfolio
+                  </div>
                 </div>
-              </div>
             </div>
           <div className="h-screen relative bg-black text-white bg-opacity-90" id="profile">
             <div className="flex items-center justify-center h-full">
