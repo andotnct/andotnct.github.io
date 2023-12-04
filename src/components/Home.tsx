@@ -26,16 +26,17 @@ const Home = () => {
 
   return (
       <div>
-        <div>
+        <head>
           <Helmet>
-          <meta property="og:title" content="andooo's Portfolio" />
-          <meta property="og:type" content="website" />
-          <meta property="og:image" content="https://raw.githubusercontent.com/andotnct/andotnct.github.io/master/public/worksImg/homepage.png" />
-          <meta property="og:url" content="https://andooo.dev" />
-          <meta property="og:description" content="あんどーのホームページ" />
-          <meta name="twitter:card" content="summary_large_image" />
+            <meta property="og:title" content="andooo's Portfolio" />
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="https://andooo.dev" />
+            <meta property="og:image" content="https://raw.githubusercontent.com/andotnct/andotnct.github.io/master/public/worksImg/homepage.png" />
+            <meta property="og:site_name" content="Andooo's Portfolio" />
+            <meta property="og:description" content="あんどーのホームページ" />
+            <meta name="twitter:card" content="summary_large_image" />
           </Helmet>
-        </div>
+        </head>
         <div className="App None h-screen" id="top">
           <BackgroundMovie />
           <Header />
