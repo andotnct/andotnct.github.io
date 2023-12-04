@@ -10,7 +10,7 @@ const Home = () => {
     background: 'rgb(255,255,255)',
     backgroundImage: 'radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%)',
     opacity: "0.95",
-    boxShadow: "10px 10px 10px 10px rgba(0,0,0,0.95)",
+    boxShadow: "10px 10px 5px 5px rgba(0,0,0,0.95)",
   };
 
   const profileBackground: React.CSSProperties = {
@@ -28,15 +28,16 @@ const Home = () => {
   return (
       <div className="App None h-screen" id="top">
         <BackgroundMovie />
+        <Header />
             <div className="h-screen flex items-center justify-center">
                 <div className="h-5/6 w-5/6 relative" style={topBackground}>
-                  <Header />
+                  
                   <div className="font-light text-5xl md:text-8xl absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center pointer-events-none text-black">
                     Andooo's Portfolio
                   </div>
                 </div>
             </div>
-          <div className="h-screen relative bg-black text-white bg-opacity-90" id="profile">
+          <div className="h-screen relative bg-black text-white bg-opacity-80" id="profile">
             <div className="flex items-center justify-center h-full">
               <div className="md:flex">
                 <img src="./icon.jpg" className="w-40 block m-auto"></img>
@@ -68,7 +69,7 @@ const Home = () => {
               </div>
               <div className="my-8 md:flex">
               <Work title="Andooo's Portfolio" explanation="このホームページです。フロントの技術を身につけたいと思い作り始めました。背景の動画はAviUtlで作っています。" useTech="Node.js, TypeScript, React, Tailwind CSS" link="andooo.dev" linktext="andooo.dev" codelink="https://github.com/andotnct/andotnct.github.io" img="./worksImg/homepage.png"/>
-                <Work title="タイピングゲーム（仮" explanation="ユーザーのタイピング記録からゴーストを生成し、擬似的にタイピング対決ができるゲームを開発中です。進捗があり次第アップデートしていきます。" useTech="Unity, C#" link="/game" linktext="andooo.dev/game" codelink="整備中" img="./worksImg/typing.jpg"/>
+                <Work title="タイピングゲーム（仮" explanation="ユーザーのタイピング記録からゴーストを生成し、擬似的にタイピング対決ができるゲームを開発中です。進捗があり次第アップデートしていきます。" useTech="Unity, C#" link="/game" linktext="andooo.dev/game" codelink="https://github.com/andotnct/andotyping" img="./worksImg/typing.jpg"/>
                 <Work title="Vegeoku紹介動画" explanation="第33回高専プロコンに出場した際に制作した作品紹介動画です。中学の頃は無限に動画編集に時間を捧げていましたが、こんなところで役立てて良かったです。" useTech="AviUtl" link="https://www.youtube.com/watch?v=fOkGEEy6dAE" linktext="https://www.youtube.com/watch?v=fOkGEEy6dAE" codelink={null} img="./worksImg/vegeoku.jpg"/>
               </div>
             </div>

@@ -4,7 +4,6 @@ import { useState } from 'react';
 import Modal from 'react-modal';
 
 const Work = (props: {title:string, explanation:string, useTech:string, link:string, linktext:string, codelink:string | null, img:string}) => {
-
     const [modalIsOpen, setModal] = useState(false);
     const openModal = () => {
         setModal(true);
@@ -12,6 +11,14 @@ const Work = (props: {title:string, explanation:string, useTech:string, link:str
     const closeModal = () => {
         setModal(false);
     };
+
+    const getModalHeight = () => {
+        if (window.innerWidth < 768) {
+          return '80%';
+        } else {
+          return '65%';
+        }
+      };
 
     const modalStyle: Modal.Styles = {
         overlay: {
@@ -33,18 +40,20 @@ const Work = (props: {title:string, explanation:string, useTech:string, link:str
             transition: 'opacity 0.2s ease-in-out',
             zIndex: 1000,
             width: '80%',
-            height: '80%',
+            height: getModalHeight(),
         },
     };
 
     return (
         <div className="mx-5">
-                <button onClick={openModal}>
-                    <img src={props.img} className="object-contain h-64 transform hover:duration-200 hover:scale-105" alt="icon" />
-                </button>
+                <div className="">
+                    <button onClick={openModal}>
+                        <img src={props.img} className="object-contain h-64 transform hover:duration-200 hover:scale-105" alt="icon" />
+                    </button>
+                </div>
             <div className="my-2 bg-black bg-opacity-70 text-white text-2xl">
                     {props.title}
-                </div>
+            </div>
             <Modal 
                 isOpen={modalIsOpen}
                 onRequestClose={() => setModal(false)}
@@ -69,10 +78,7 @@ const Work = (props: {title:string, explanation:string, useTech:string, link:str
                                         </div>
                                         <div className="">
                                             <HashLink to={props.link} target="_blank">
-                                                <button className="text-blue-500 hover:underline text-xl md:block hidden ">
-                                                    {props.linktext}
-                                                </button>
-                                                <button className="text-blue-500 hover:underline text-xl md:hidden" style={{ maxWidth: '200px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                                                <button className="text-blue-500 hover:underline text-xl ">
                                                     {props.linktext}
                                                 </button>
                                             </HashLink>
@@ -87,9 +93,6 @@ const Work = (props: {title:string, explanation:string, useTech:string, link:str
                                                 </div>
                                                 <HashLink to={props.codelink} target="_blank">
                                                     <button className="text-blue-500 hover:underline text-xl md:block hidden">
-                                                        {props.codelink}
-                                                    </button>
-                                                    <button className="text-blue-500 hover:underline text-xl md:hidden" style={{ maxWidth: '200px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                                                         {props.codelink}
                                                     </button>
                                                 </HashLink>
@@ -117,7 +120,7 @@ const Work = (props: {title:string, explanation:string, useTech:string, link:str
                             </div>
                         </div>
                         <div>
-                            <button onClick={closeModal} className="text-3xl text-white bg-gray-700 hover:bg-black px-5 py-1 rounded-lg">
+                            <button onClick={closeModal} className=" text-3xl text-white bg-gray-700 hover:bg-black px-5 py-1 rounded-lg">
                                 CLOSE
                             </button>
                         </div>
@@ -127,32 +130,4 @@ const Work = (props: {title:string, explanation:string, useTech:string, link:str
         </div>
     );
 };
-
-<div className="flex">
-  {/* 左側の要素 */}
-  <div className="flex-1">
-    {/* 左側のテキスト */}
-    <div className="font-bold text-5xl mb-2.5">
-      Left Text
-    </div>
-    <div className="text-xl">
-      Left Content Here
-    </div>
-    {/* 他の左側の要素... */}
-  </div>
-
-  {/* 右側の要素 */}
-  <div className="flex-1 flex justify-end">
-    {/* 右側のテキスト */}
-    <div className="font-bold text-5xl mb-2.5">
-      Right Text
-    </div>
-    <div className="text-xl">
-      Right Content Here
-    </div>
-    {/* 他の右側の要素... */}
-  </div>
-</div>
-
-
 export default Work;
