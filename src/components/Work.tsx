@@ -46,12 +46,10 @@ const Work = (props: {title:string, explanation:string, useTech:string, link:str
 
     return (
         <div className="mx-5">
-                <div className="">
-                    <button onClick={openModal}>
-                        <img src={props.img} className="object-contain h-64 transform hover:duration-200 hover:scale-105" alt="icon" />
-                    </button>
-                </div>
-            <div className="my-2 bg-black bg-opacity-70 text-white text-2xl">
+                <button onClick={openModal} className="">
+                    <img src={props.img} className="object-contain h-64 transform hover:duration-200 hover:scale-105 shadow-xl" alt="icon" />
+                </button>
+            <div className="my-2 bg-black bg-opacity-70 text-white text-2xl shadow-xl">
                     {props.title}
             </div>
             <Modal 

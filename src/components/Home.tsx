@@ -4,6 +4,7 @@ import Header from "./Header";
 import BackgroundMovie from "./BackgroundMovie";
 import Work from "./Work";
 import Modal from 'react-modal';
+import Helmet from 'react-helmet';
 
 const Home = () => {
   const topBackground: React.CSSProperties = {
@@ -27,6 +28,13 @@ const Home = () => {
 
   return (
       <div className="App None h-screen" id="top">
+        <Helmet>
+        <meta property="og:title" content="andooo's Portfolio" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://raw.githubusercontent.com/andotnct/andotnct.github.io/master/public/worksImg/homepage.png" />
+        <meta property="og:url" content="https://andooo.dev" />
+        <meta property="og:description" content="あんどーのホームページ" />
+        </Helmet>
         <BackgroundMovie />
         <Header />
             <div className="h-screen flex items-center justify-center">
@@ -64,7 +72,7 @@ const Home = () => {
           </div>
           <div className="h-screen relative" id="works">          
             <div className="flex justify-center flex-col items-center">
-              <div className="bg-black bg-opacity-70 mt-20 text-white font-bold text-5xl md:text-6xl px-16 md:px-20 py-1 rounded-full">
+              <div className="shadow-xl bg-black bg-opacity-70 mt-20 text-white font-bold text-5xl md:text-6xl px-16 md:px-20 py-1 rounded-full">
                 WORKS
               </div>
               <div className="my-8 md:flex">
