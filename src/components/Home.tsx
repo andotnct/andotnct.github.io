@@ -34,6 +34,9 @@ const Home = () => {
             <meta property="og:image" content="https://raw.githubusercontent.com/andotnct/andotnct.github.io/master/public/worksImg/homepage.png" />
             <meta property="og:site_name" content="Andooo's Portfolio" />
             <meta property="og:description" content="あんどーのホームページ" />
+            <meta name="twitter:title" content="andooo's Portfolio" />
+            <meta name="twitter:description" content="あんどーのホームページ" />
+            <meta name="twitter:image" content="https://example.com/image.jpg" />
             <meta name="twitter:card" content="summary_large_image" />
           </Helmet>
         </head>
