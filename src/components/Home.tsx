@@ -26,20 +26,18 @@ const Home = () => {
 
   return (
       <div>
-        <head>
-          <Helmet>
-            <meta property="og:title" content="andooo's Portfolio" />
-            <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://andooo.dev" />
-            <meta property="og:image" content="https://raw.githubusercontent.com/andotnct/andotnct.github.io/master/public/worksImg/homepage.png" />
-            <meta property="og:site_name" content="Andooo's Portfolio" />
-            <meta property="og:description" content="あんどーのホームページ" />
-            <meta name="twitter:title" content="andooo's Portfolio" />
-            <meta name="twitter:description" content="あんどーのホームページ" />
-            <meta name="twitter:image" content="https://raw.githubusercontent.com/andotnct/andotnct.github.io/master/public/worksImg/homepage.png" />
-            <meta name="twitter:card" content="summary_large_image" />
-          </Helmet>
-        </head>
+        <Helmet>
+          <meta property="og:title" content="andooo's Portfolio" />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://andooo.dev" />
+          <meta property="og:image" content="https://raw.githubusercontent.com/andotnct/andotnct.github.io/master/public/worksImg/homepage.png" />
+          <meta property="og:site_name" content="Andooo's Portfolio" />
+          <meta property="og:description" content="あんどーのホームページ" />
+          <meta name="twitter:title" content="andooo's Portfolio" />
+          <meta name="twitter:description" content="あんどーのホームページ" />
+          <meta name="twitter:image" content="https://raw.githubusercontent.com/andotnct/andotnct.github.io/master/public/worksImg/homepage.png" />
+          <meta name="twitter:card" content="summary_large_image" />
+        </Helmet>
         <div className="App None h-screen" id="top">
           <BackgroundMovie />
           <Header />
@@ -62,14 +60,14 @@ const Home = () => {
                     東京都出身<br />
                     東京工業高等専門学校 情報工学科 卒業<br />
                     東京大学工学部 システム創成学科 在籍<br />
-                    <a href="https://twitter.com/ando_tnct" target="_blank">
+                    <a href="https://github.com/andotnct" target="_blank">
                       <div>
-                      ■Twitter <p className="text-blue-500 hover:underline" style={{ display: 'inline' }}>https://twitter.com/ando_tnct</p>
+                      ■GitHub <p className="text-blue-500 hover:underline" style={{ display: 'inline' }}>https://github.com/andotnct</p>
                       </div>
                     </a>
-                    <a href="https://www.youtube.com/@andooodev" target="_blank">
+                    <a href="mailto:ando.hikaru@andooo.dev">
                       <div>
-                        ■YouTube <p className="text-blue-500 hover:underline" style={{ display: 'inline' }}>https://www.youtube.com/@andooodev</p>
+                        ■Mail <p className="text-blue-500 hover:underline" style={{ display: 'inline' }}>ando.hikaru@andooo.dev</p>
                       </div>
                     </a>
                   </div>
@@ -82,8 +80,8 @@ const Home = () => {
                   WORKS
                 </div>
                 <div className="my-8 md:flex">
-                <Work title="Andooo's Portfolio" explanation="このホームページです。フロントの技術を身につけたいと思い作り始めました。背景の動画はAviUtlで作っています。" useTech="Node.js, TypeScript, React, Tailwind CSS" link="andooo.dev" linktext="andooo.dev" codelink="https://github.com/andotnct/andotnct.github.io" img="./worksImg/homepage.png"/>
-                  <Work title="タイピングゲーム（仮" explanation="ユーザーのタイピング記録からゴーストを生成し、擬似的にタイピング対決ができるゲームを開発中です。進捗があり次第アップデートしていきます。" useTech="Unity, C#" link="/game" linktext="andooo.dev/game" codelink="https://github.com/andotnct/andotyping" img="./worksImg/typing.jpg"/>
+                <Work title="Andooo's Portfolio" explanation="このホームページです。フロントの技術を身につけたいと思い作り始めました。背景の動画はAviUtlで作っています。" useTech="Node.js, TypeScript, React, Tailwind CSS" link="https://andooo.dev" linktext="https://andooo.dev" codelink="https://github.com/andotnct/andotnct.github.io" img="./worksImg/homepage.png"/>
+                  <Work title="タイピングゲーム（仮" explanation="ユーザーのタイピング記録からゴーストを生成し、擬似的にタイピング対決ができるゲームを開発中です。進捗があり次第アップデートしていきます。" useTech="Unity, C#" link="/game" linktext="https://andooo.dev/game" codelink="https://github.com/andotnct/andotyping" img="./worksImg/typing.jpg"/>
                   <Work title="Vegeoku紹介動画" explanation="第33回高専プロコンに出場した際に制作した作品紹介動画です。中学の頃は無限に動画編集に時間を捧げていましたが、こんなところで役立てて良かったです。" useTech="AviUtl" link="https://www.youtube.com/watch?v=fOkGEEy6dAE" linktext="https://www.youtube.com/watch?v=fOkGEEy6dAE" codelink={null} img="./worksImg/vegeoku.jpg"/>
                 </div>
               </div>
