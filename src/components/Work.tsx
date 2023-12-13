@@ -45,9 +45,9 @@ const Work = (props: {title:string, explanation:string, useTech:string, link:str
     };
 
     return (
-        <div className="mx-5">
+        <div className="mx-16">
                 <button onClick={openModal} className="">
-                    <img src={props.img} className="object-contain h-64 transform hover:duration-200 hover:scale-105 shadow-xl" alt="icon" />
+                    <img src={props.img} className="object-contain h-56 transform hover:duration-200 hover:scale-105 shadow-xl" alt="icon" />
                 </button>
             <div className="my-2 bg-black bg-opacity-70 text-white text-2xl shadow-xl">
                     {props.title}
@@ -76,7 +76,7 @@ const Work = (props: {title:string, explanation:string, useTech:string, link:str
                                         </div>
                                         <div className="">
                                             <HashLink to={props.link} target="_blank">
-                                                <button className="text-blue-500 hover:underline text-xl ">
+                                                <button className="text-blue-500 hover:underline text-xl">
                                                     {props.linktext}
                                                 </button>
                                             </HashLink>
@@ -94,7 +94,7 @@ const Work = (props: {title:string, explanation:string, useTech:string, link:str
                                                         {props.codelink}
                                                     </button>
                                                 </HashLink>
-                                                </div>
+                                            </div>
                                             <hr className="my-3 bg-black" />
                                         </div>
                                         ) : null
