@@ -45,9 +45,9 @@ const Work = (props: {title:string, explanation:string, useTech:string, link:str
     };
 
     return (
-        <div className="mx-16">
+        <div className="mx-16 my-8 md:my-0">
                 <button onClick={openModal} className="">
-                    <img src={props.img} className="object-contain h-56 transform hover:duration-200 hover:scale-105 shadow-xl" alt="icon" />
+                    <img src={props.img} className="object-contain md:h-56 transform hover:duration-200 hover:scale-105 shadow-xl" alt="icon" />
                 </button>
             <div className="my-2 bg-black bg-opacity-70 text-white text-2xl shadow-xl">
                     {props.title}
