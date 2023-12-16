@@ -31,6 +31,10 @@
       sessionStorage.removeItem('path');
       window.history.replaceState(null, null, './andotyping');
     }
+    if (path && path === '/purokiso') {
+      sessionStorage.removeItem('path');
+      window.history.replaceState(null, null, './purokiso');
+    }
   </script>
 </head>
 
