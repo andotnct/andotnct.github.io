@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Unity, useUnityContext } from "react-unity-webgl"
 import Header from "./Header";
-
 import BackgroundMovie from "./BackgroundMovie";
 
 const Game = () => {
