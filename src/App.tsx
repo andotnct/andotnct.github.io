@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./components/Home";
 import Game from "./components/Game";
 import Header from "./components/Header";
+import Purokiso from "./components/Purokiso";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/andotyping" element={<Game />} />
+        <Route path="/purokiso" element={<Purokiso />} />
       </Routes>
     </BrowserRouter>
   );
