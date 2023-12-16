@@ -30,8 +30,7 @@
     if (path && path === '/andotyping') {
       sessionStorage.removeItem('path');
       window.history.replaceState(null, null, './andotyping');
-    }
-    if (path && path === '/purokiso') {
+    } else if (path && path === '/purokiso') {
       sessionStorage.removeItem('path');
       window.history.replaceState(null, null, './purokiso');
     }
