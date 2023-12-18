@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404</title>
     <script>
+        console.log(location.pathname);
         sessionStorage.setItem('path', location.pathname);
         location.replace('./');
     </script>

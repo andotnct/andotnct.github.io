@@ -83,7 +83,7 @@ const Home = () => {
               </div>
               <div className="flex-col">
                 <div className="my-8 md:flex">
-                    <Work title="Andooo's Portfolio" explanation="このホームページです。フロントの技術を身につけたいと思い作り始めました。背景の動画はAviUtlで作っています。" useTech="Node.js, TypeScript, React, Tailwind CSS" link="https://andooo.dev" linktext="https://andooo.dev" codelink="https://github.com/andotnct/andotnct.github.io" img="./worksImg/homepage.png"/>
+                    <Work title="Andooo's Portfolio" explanation="このホームページです。フロントの技術を身につけたいと思い作り始め、背景の動画はAviUtlで作っています。スマホで見た時にも違和感のないデザインとなるようレスポンシブ対応させるのに苦労しました。" useTech="Node.js, TypeScript, React, Tailwind CSS" link="https://andooo.dev" linktext="https://andooo.dev" codelink="https://github.com/andotnct/andotnct.github.io" img="./worksImg/homepage.png"/>
                     <Work title="タイピングゲーム（仮" explanation="ユーザーのタイピング記録からゴーストを生成し、擬似的にタイピング対決ができるゲームを開発中です。進捗があり次第アップデートしていきます。" useTech="Unity, C#" link="/andotyping" linktext="https://www.andooo.dev/andotyping" codelink="https://github.com/andotnct/andotyping" img="./worksImg/typing.jpg"/>
                 </div>
                 <div className="my-8 md:flex">
