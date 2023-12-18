@@ -5,6 +5,7 @@ import BackgroundMovie from "./BackgroundMovie";
 import Work from "./Work";
 import Modal from 'react-modal';
 import Helmet from 'react-helmet';
+import Skill from "./Skill";
 
 const Home = () => {
   const topBackground: React.CSSProperties = {
@@ -49,31 +50,33 @@ const Home = () => {
                 </div>
             </div>
             <div className="h-screen relative bg-black text-white bg-opacity-80" id="profile">
-              <div className="flex items-center justify-center h-full">
-                <div className="md:flex">
-                  <img src="./icon.jpg" className="w-40 block m-auto"></img>
-                  <div className="mx-8 text-left my-4 md:my-0">
-                    <div className="text-4xl font-bold">
-                      あんどー
+              <div className="flex-col flex justify-center items-center h-full">
+                  <div className="flex items-center justify-center my-8">
+                    <div className="md:flex">
+                      <img src="./icon.jpg" className="w-40 block m-auto"></img>
+                      <div className="mx-8 text-left my-4 md:my-0">
+                        <div className="text-4xl font-bold">
+                          あんどー
+                        </div>
+                        東京都出身<br />
+                        東京工業高等専門学校 情報工学科 卒業<br />
+                        東京大学工学部 システム創成学科 在籍<br />
+                        <a href="https://github.com/andotnct" target="_blank">
+                          <div>
+                          ■GitHub <p className="text-blue-500 hover:underline" style={{ display: 'inline' }}>https://github.com/andotnct</p>
+                          </div>
+                        </a>
+                        <a href="mailto:ando.hikaru@andooo.dev">
+                          <div>
+                            ■Mail <p className="text-blue-500 hover:underline" style={{ display: 'inline' }}>ando.hikaru@andooo.dev</p>
+                          </div>
+                        </a>
+                      </div>
                     </div>
-                    東京都出身<br />
-                    東京工業高等専門学校 情報工学科 卒業<br />
-                    東京大学工学部 システム創成学科 在籍<br />
-                    <a href="https://github.com/andotnct" target="_blank">
-                      <div>
-                      ■GitHub <p className="text-blue-500 hover:underline" style={{ display: 'inline' }}>https://github.com/andotnct</p>
-                      </div>
-                    </a>
-                    <a href="mailto:ando.hikaru@andooo.dev">
-                      <div>
-                        ■Mail <p className="text-blue-500 hover:underline" style={{ display: 'inline' }}>ando.hikaru@andooo.dev</p>
-                      </div>
-                    </a>
                   </div>
                 </div>
-              </div>
             </div>
-            <div className="h-screen relative" id="works">          
+            <div className="h-screen relative" id="works" style={{ minHeight: '840px' }}>          
               <div className="flex justify-center flex-col items-center">
                 <div className="shadow-xl bg-black bg-opacity-70 mt-20 text-white font-bold text-5xl md:text-5xl px-16 md:px-20 py-1 rounded-full">
                   WORKS
@@ -90,6 +93,46 @@ const Home = () => {
                 </div>
               </div>
             </div>
+          <div className="h-screen relative bg-black text-white bg-opacity-80" id="skill" style={{ minHeight: '730px' }}>
+            <div className="flex justify-center flex-col items-center">
+              <div className="text-5xl font-bold mt-20">
+                SKILL
+              </div>
+              <div className="mt-2">
+                よく使うものから触ったことある程度のものまであります
+              </div>
+              <div className="flex flex-col justify-center items-center mt-20">
+                <div className="flex justify-center items-center my-2">
+                  <Skill language="HTML" img="languageLogo/HTML.jpg"/>
+                  <Skill language="CSS" img="languageLogo/CSS.jpg"/>
+                  <Skill language="Sass" img="languageLogo/Sass.jpg"/>
+                  <Skill language="JavaScript" img="languageLogo/JavaScript.jpg"/>
+                  <Skill language="TypeScript" img="languageLogo/TypeScript.jpg"/>
+                  <Skill language="Elm" img="languageLogo/Elm.jpg"/>
+                </div>
+                <div className="flex justify-center items-center my-2">
+                  <Skill language="Python" img="languageLogo/Python.jpg"/>
+                  <Skill language="Java" img="languageLogo/Java.jpg"/>
+                  <Skill language="C" img="languageLogo/C.jpg"/>
+                  <Skill language="C++" img="languageLogo/CPlusPlus.jpg"/>
+                  <Skill language="C#" img="languageLogo/CSharp.jpg"/>
+                  <Skill language="Haskell" img="languageLogo/Haskell.jpg"/>
+                </div>
+                <div className="flex justify-center items-center my-2">
+                  <Skill language="Next.js" img="languageLogo/Nextjs.jpg"/>
+                  <Skill language="Node.js" img="languageLogo/Nodejs.jpg"/>
+                  <Skill language="django" img="languageLogo/django.jpg"/>
+                  <Skill language="React" img="languageLogo/React.jpg"/>
+                  <Skill language="Tailwind" img="languageLogo/Tailwind.jpg"/>
+                  <Skill language="GitHub" img="languageLogo/GitHub.jpg"/>
+                  <Skill language="AWS" img="languageLogo/AWS.jpg"/>
+                  <Skill language="Docker" img="languageLogo/Docker.jpg"/>
+                  <Skill language="Unity" img="languageLogo/Unity.jpg"/>
+                  <Skill language="AviUtl" img="languageLogo/AviUtl.jpg"/>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
   );
