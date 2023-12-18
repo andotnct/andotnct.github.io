@@ -28,7 +28,7 @@ const Header = () => {
                         </HashLink>
                     )}
                 </div>
-                <div className="flex items-center text-3xl md:text-4xl font-bold">
+                <div className="flex items-center text-xl md:text-4xl font-bold">
                     {isRoot ? (
                         <AnchorLink href="#top">
                             <button className="px-2 py-3 hover:bg-gray-800 hover:text-white">

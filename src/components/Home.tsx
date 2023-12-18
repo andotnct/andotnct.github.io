@@ -76,59 +76,94 @@ const Home = () => {
                   </div>
                 </div>
             </div>
-            <div className="h-screen relative" id="works" style={{ minHeight: '840px' }}>          
-              <div className="flex justify-center flex-col items-center">
-                <div className="shadow-xl bg-black bg-opacity-70 mt-20 text-white font-bold text-5xl md:text-5xl px-16 md:px-20 py-1 rounded-full">
-                  WORKS
+          <div className="md:h-screen relative" id="works" style={{ minHeight: '840px'}}>
+            <div className="flex justify-center flex-col items-center">
+              <div className="shadow-xl bg-black bg-opacity-70 mt-20 text-white font-bold text-5xl md:text-5xl px-16 md:px-20 py-1 rounded-full">
+                WORKS
+              </div>
+              <div className="flex-col">
+                <div className="my-8 md:flex">
+                    <Work title="Andooo's Portfolio" explanation="このホームページです。フロントの技術を身につけたいと思い作り始めました。背景の動画はAviUtlで作っています。" useTech="Node.js, TypeScript, React, Tailwind CSS" link="https://andooo.dev" linktext="https://andooo.dev" codelink="https://github.com/andotnct/andotnct.github.io" img="./worksImg/homepage.png"/>
+                    <Work title="タイピングゲーム（仮" explanation="ユーザーのタイピング記録からゴーストを生成し、擬似的にタイピング対決ができるゲームを開発中です。進捗があり次第アップデートしていきます。" useTech="Unity, C#" link="/andotyping" linktext="https://www.andooo.dev/andotyping" codelink="https://github.com/andotnct/andotyping" img="./worksImg/typing.jpg"/>
                 </div>
-                <div className="flex-col">
-                  <div className="my-8 md:flex">
-                      <Work title="Andooo's Portfolio" explanation="このホームページです。フロントの技術を身につけたいと思い作り始めました。背景の動画はAviUtlで作っています。" useTech="Node.js, TypeScript, React, Tailwind CSS" link="https://andooo.dev" linktext="https://andooo.dev" codelink="https://github.com/andotnct/andotnct.github.io" img="./worksImg/homepage.png"/>
-                      <Work title="タイピングゲーム（仮" explanation="ユーザーのタイピング記録からゴーストを生成し、擬似的にタイピング対決ができるゲームを開発中です。進捗があり次第アップデートしていきます。" useTech="Unity, C#" link="/andotyping" linktext="https://www.andooo.dev/andotyping" codelink="https://github.com/andotnct/andotyping" img="./worksImg/typing.jpg"/>
-                  </div>
-                  <div className="my-8 md:flex">
-                    <Work title="千手観音キャンバス" explanation="いくつもの線が同時に描画される不思議なペイントツールをElmで開発しました。Elmは関数型言語の一種ですが、最初は高専時代の友人に関数型言語を強く推されDiscordでHaskellの講義をしてもらったのが始まりです。 if文もfor文もない言語に戸惑いつつも、手続き型言語とは違った脳の使い方をすることで楽しさを見出しプログラミングへの視野を広げることもできました。" useTech="Elm" link="https://elmcanvas.andooo.dev/" linktext="https://elmcanvas.andooo.dev/" codelink="https://github.com/andotnct/ElmCanvas" img="./worksImg/ElmCanvas.jpg"/>
-                    <Work title="Vegeoku紹介動画" explanation="第33回高専プロコンに出場した際に制作した作品紹介動画です。中学の頃は無限に動画編集に時間を捧げていましたがこんなところで役立てて良かったです。強力すぎるメンバーのおかげで、本戦では特別賞と企業賞をいただくことができました。" useTech="AviUtl" link="https://www.youtube.com/watch?v=fOkGEEy6dAE" linktext="https://www.youtube.com/watch?v=fOkGEEy6dAE" codelink={null} img="./worksImg/vegeoku.jpg"/>  
-                  </div>
+                <div className="my-8 md:flex">
+                  <Work title="千手観音キャンバス" explanation="いくつもの線が同時に描画される不思議なペイントツールをElmで開発しました。Elmは関数型言語の一種ですが、最初は高専時代の友人に関数型言語を強く推されDiscordでHaskellの講義をしてもらったのが始まりです。 if文もfor文もない言語に戸惑いつつも、手続き型言語とは違った脳の使い方をすることで楽しさを見出しプログラミングへの視野を広げることもできました。" useTech="Elm" link="https://elmcanvas.andooo.dev/" linktext="https://elmcanvas.andooo.dev/" codelink="https://github.com/andotnct/ElmCanvas" img="./worksImg/ElmCanvas.jpg"/>
+                  <Work title="Vegeoku紹介動画" explanation="第33回高専プロコンに出場した際に制作した作品紹介動画です。中学の頃は無限に動画編集に時間を捧げていましたがこんなところで役立てて良かったです。強力すぎるメンバーのおかげで、本戦では特別賞と企業賞をいただくことができました。" useTech="AviUtl" link="https://www.youtube.com/watch?v=fOkGEEy6dAE" linktext="https://www.youtube.com/watch?v=fOkGEEy6dAE" codelink={null} img="./worksImg/vegeoku.jpg"/>  
                 </div>
               </div>
             </div>
-          <div className="h-screen relative bg-black text-white bg-opacity-80" id="skill" style={{ minHeight: '730px' }}>
+          </div>
+          <div className="md:h-screen relative bg-black text-white bg-opacity-80" id="skill" style={{ minHeight: '730px' }}>
             <div className="flex justify-center flex-col items-center">
               <div className="text-5xl font-bold mt-20">
                 SKILL
               </div>
-              <div className="mt-2">
-                よく使うものから触ったことある程度のものまであります
+              <div className="hidden md:block">
+                <div className="text-xl mt-2">
+                  よく使うものから触ったことある程度のものまであります
+                </div>
               </div>
+              <div className="md:hidden">
+                <div className="text-xl mt-2">
+                  <div>
+                    よく使うものから触ったことある
+                  </div>
+                  <div>
+                    程度のものまであります
+                  </div>
+                </div>
+              </div>
+
               <div className="flex flex-col justify-center items-center mt-20">
-                <div className="flex justify-center items-center my-2">
-                  <Skill language="HTML" img="languageLogo/HTML.jpg"/>
-                  <Skill language="CSS" img="languageLogo/CSS.jpg"/>
-                  <Skill language="Sass" img="languageLogo/Sass.jpg"/>
-                  <Skill language="JavaScript" img="languageLogo/JavaScript.jpg"/>
-                  <Skill language="TypeScript" img="languageLogo/TypeScript.jpg"/>
-                  <Skill language="Elm" img="languageLogo/Elm.jpg"/>
+                <div className="md:flex md:justify-center md:items-center md:my-2">
+                  <div className="flex">
+                    <Skill language="HTML" img="languageLogo/HTML.jpg"/>
+                    <Skill language="CSS" img="languageLogo/CSS.jpg"/>
+                  </div>
+                  <div className="flex">
+                    <Skill language="Sass" img="languageLogo/Sass.jpg"/>
+                    <Skill language="JavaScript" img="languageLogo/JavaScript.jpg"/>
+                  </div>
+                  <div className="flex">
+                    <Skill language="TypeScript" img="languageLogo/TypeScript.jpg"/>
+                    <Skill language="Elm" img="languageLogo/Elm.jpg"/>
+                  </div>
                 </div>
-                <div className="flex justify-center items-center my-2">
-                  <Skill language="Python" img="languageLogo/Python.jpg"/>
-                  <Skill language="Java" img="languageLogo/Java.jpg"/>
-                  <Skill language="C" img="languageLogo/C.jpg"/>
-                  <Skill language="C++" img="languageLogo/CPlusPlus.jpg"/>
-                  <Skill language="C#" img="languageLogo/CSharp.jpg"/>
-                  <Skill language="Haskell" img="languageLogo/Haskell.jpg"/>
+                <div className="md:flex md:justify-center md:items-center md:my-2">
+                  <div className="flex">
+                    <Skill language="Python" img="languageLogo/Python.jpg"/>
+                    <Skill language="Java" img="languageLogo/Java.jpg"/>
+                  </div>
+                  <div className="flex">
+                    <Skill language="C" img="languageLogo/C.jpg"/>
+                    <Skill language="C++" img="languageLogo/CPlusPlus.jpg"/>
+                  </div>
+                  <div className="flex">
+                    <Skill language="C#" img="languageLogo/CSharp.jpg"/>
+                    <Skill language="Haskell" img="languageLogo/Haskell.jpg"/>
+                  </div>
                 </div>
-                <div className="flex justify-center items-center my-2">
-                  <Skill language="Next.js" img="languageLogo/Nextjs.jpg"/>
-                  <Skill language="Node.js" img="languageLogo/Nodejs.jpg"/>
-                  <Skill language="django" img="languageLogo/django.jpg"/>
-                  <Skill language="React" img="languageLogo/React.jpg"/>
-                  <Skill language="Tailwind" img="languageLogo/Tailwind.jpg"/>
-                  <Skill language="GitHub" img="languageLogo/GitHub.jpg"/>
-                  <Skill language="AWS" img="languageLogo/AWS.jpg"/>
-                  <Skill language="Docker" img="languageLogo/Docker.jpg"/>
-                  <Skill language="Unity" img="languageLogo/Unity.jpg"/>
-                  <Skill language="AviUtl" img="languageLogo/AviUtl.jpg"/>
+                <div className="md:flex md:justify-center md:items-center my-2">
+                  <div className="flex">
+                    <Skill language="Next.js" img="languageLogo/Nextjs.jpg"/>
+                    <Skill language="Node.js" img="languageLogo/Nodejs.jpg"/>
+                  </div>
+                  <div className="flex">
+                    <Skill language="django" img="languageLogo/django.jpg"/>
+                    <Skill language="React" img="languageLogo/React.jpg"/>
+                  </div>
+                  <div className="flex">
+                    <Skill language="Tailwind" img="languageLogo/Tailwind.jpg"/>
+                    <Skill language="GitHub" img="languageLogo/GitHub.jpg"/>
+                  </div>
+                  <div className="flex">
+                    <Skill language="AWS" img="languageLogo/AWS.jpg"/>
+                    <Skill language="Docker" img="languageLogo/Docker.jpg"/>
+                  </div>
+                  <div className="flex">
+                    <Skill language="Unity" img="languageLogo/Unity.jpg"/>
+                    <Skill language="AviUtl" img="languageLogo/AviUtl.jpg"/>
+                  </div>
                 </div>
               </div>
             </div>
