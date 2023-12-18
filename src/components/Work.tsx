@@ -57,12 +57,12 @@ const Work = (props: {title:string, explanation:string, useTech:string, link:str
                 onRequestClose={() => setModal(false)}
                 style={modalStyle}
                 closeTimeoutMS={200}
-            >
+            >                           
                 <div className="flex-col justify-center">
-                    <div className="flex justify-center font-bold text-5xl mb-2.5">
+                    <div className="flex justify-center font-bold text-2xl md:text-5xl mb-2.5">
                         {props.title}
-                    </div>
-                    <div className="flex flex-col items-center">
+                    </div>    
+                    <div className="md:flex flex-col items-center">
                         <div className="md:flex">
                             <div className="flex-col md:flex-1 md:mx-5 text-xl">
                                 <div>
@@ -74,11 +74,12 @@ const Work = (props: {title:string, explanation:string, useTech:string, link:str
                                         <div className="">
                                             リンク：
                                         </div>
+
                                         <div className="">
-                                            <HashLink to={props.link} target="_blank">
-                                                <button className="text-blue-500 hover:underline text-xl">
+                                            <HashLink to={props.link} target="_blank" className="text-blue-500 hover:underline text-xl">
+                                                <div className="truncate">
                                                     {props.linktext}
-                                                </button>
+                                                </div>
                                             </HashLink>
                                         </div>
                                     </div>
@@ -89,10 +90,10 @@ const Work = (props: {title:string, explanation:string, useTech:string, link:str
                                                 <div className="">
                                                     ソースコード：
                                                 </div>
-                                                <HashLink to={props.codelink} target="_blank">
-                                                    <button className="text-blue-500 hover:underline text-xl md:block hidden">
+                                                <HashLink to={props.codelink} target="_blank" className="text-blue-500 hover:underline text-xl">
+                                                    <div className="truncate">
                                                         {props.codelink}
-                                                    </button>
+                                                    </div>
                                                 </HashLink>
                                             </div>
                                             <hr className="my-3 bg-black" />
