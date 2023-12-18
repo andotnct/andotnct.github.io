@@ -19,9 +19,9 @@ const Purokiso = () => {
         <div className="h-screen">
             <BackgroundMovie />
             <Header />
-            <div className="h-screen flex items-center justify-center">
+            <div className="h-screen flex items-center justify-center" style={{ minHeight: '700px' }}>
                   <div className="h-5/6 w-5/6" style={Background}>
-                    <div className="font-light h-full absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center text-black">
+                    <div className="font-light h-full top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center text-black">
                       <div className="text-4xl md:text-6xl flex flex-col items-center font-bold">
                         <div>
                             プロ基礎自由制作

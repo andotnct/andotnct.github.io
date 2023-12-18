@@ -68,6 +68,19 @@ const Header = () => {
                             </button>
                         </HashLink>
                     )}
+                    {isRoot ? (
+                        <AnchorLink href="#skill">
+                            <button className="px-2 py-3 hover:bg-gray-800 hover:text-white">
+                                SKILL
+                            </button>
+                        </AnchorLink>
+                    ) : (
+                        <HashLink to="/#skill">
+                            <button className="px-2 py-3 hover:bg-gray-800 hover:text-white">
+                                SKILL
+                            </button>
+                        </HashLink>
+                    )}
                 </div>
             </div>
         </div>
