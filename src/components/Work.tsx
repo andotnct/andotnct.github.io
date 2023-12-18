@@ -113,7 +113,7 @@ const Work = (props: {title:string, explanation:string, useTech:string, link:str
                             <div className="md:flex-1 flex justify-end items-center md:mx-5">
                                 <HashLink to={props.link} target="_blank">
                                     <button>
-                                        <img src={props.img} className="object-contain h-96 transform" alt="icon" />
+                                        <img src={props.img} className="object-contain my-8 md:my-0 md:h-96 transform" alt="icon" />
                                     </button>
                                 </HashLink>
                             </div>
