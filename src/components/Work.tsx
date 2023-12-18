@@ -118,8 +118,8 @@ const Work = (props: {title:string, explanation:string, useTech:string, link:str
                                 </HashLink>
                             </div>
                         </div>
-                        <div>
-                            <button onClick={closeModal} className=" text-3xl text-white bg-gray-700 hover:bg-black px-5 py-1 rounded-lg">
+                        <div className="flex justify-center ">
+                            <button onClick={closeModal} className="text-3xl text-white bg-gray-700 hover:bg-black px-5 py-1 rounded-lg">
                                 CLOSE
                             </button>
                         </div>
