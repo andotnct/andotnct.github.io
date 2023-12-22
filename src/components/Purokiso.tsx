@@ -19,50 +19,60 @@ const Purokiso = () => {
         <div className="h-screen">
             <BackgroundMovie />
             <Header />
-            <div className="h-screen flex items-center justify-center" style={{ minHeight: '700px' }}>
+            <div className="h-screen flex items-center justify-center" style={{ minHeight: '700px'}}>
                   <div className="h-5/6 w-5/6" style={Background}>
                     <div className="font-light h-full top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center text-black">
-                      <div className="text-4xl md:text-6xl flex flex-col items-center font-bold">
+                      <div className="text-3xl md:text-6xl flex flex-col items-center font-bold">
                         <div>
                             プロ基礎自由制作
                         </div>
                         <div>
-                            「作品タイトル」
+                            「Air Art」
                         </div>
                       </div>
                       <div className="w-8/12">
                         <div className="text-base md:text-2xl md:mt-8">
                             <div>
                                 <div>
-                                    作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明
+                                    作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明
                                 </div>
                             </div>
-                            <div className="flex flex-col items-center">
-                                <div className="flex items-center md:mt-8">
-                                    <a href="andooo.dev" target="_blank">
-                                        <div>
-                                        ■「作品タイトル」 <p className="text-blue-500 hover:underline" style={{ display: 'inline' }}>andooo.dev</p>
+                            <div className="md:flex flex-col items-center">
+                                <div className="md:flex items-center md:mt-8">
+                                    <div className="md:flex">
+                                        ■デモ 
+                                            <a href="https://airart.andooo.dev" target="_blank">
+                                                <div className="truncate">
+                                                    <p className="text-blue-500 hover:underline pl-3" style={{ display: 'inline' }}>https://airart.andooo.dev/</p>
+                                                </div>
+                                            </a>
                                         </div>
-                                    </a>
                                 </div>
-                                    <div className="flex items-center md:mt-8">
-                                    <a href="andooo.dev" target="_blank">
-                                        <div>
-                                        ■ソースコード <p className="text-blue-500 hover:underline" style={{ display: 'inline' }}>andooo.dev</p>
+                                    <div className="md:flex items-center md:mt-8">
+                                        <div className="md:flex">
+                                        ■ソースコード 
+                                            <a href="https://github.com/andotnct/AirArt/blob/main/src/AirArt.elm" target="_blank">
+                                                <div className="truncate">
+                                                    <p className="text-blue-500 hover:underline pl-3" style={{ display: 'inline' }}>https://github.com/andotnct/AirArt/blob/main/src/AirArt.elm</p>
+                                                </div>
+                                            </a>
                                         </div>
-                                    </a>
                                 </div>
-                                <div className="flex items-center md:mt-8">
-                                    <a href="https://github.com/andotnct" target="_blank">
-                                        <div>
-                                        ■他の作品（良ければ見てください）
-                                        <HashLink to="/#works">
-                                          <button className="text-blue-500 hover:underline">
-                                            https://www.andooo.dev/#works
-                                          </button>
-                                        </HashLink>
+                                <div className="md:flex items-center md:mt-8">
+                                    <div className="md:flex">
+                                        <div className="hidden md:block">
+                                            ■他の作品（良ければ見てください）
                                         </div>
-                                    </a>
+                                        <div className="md:hidden">
+                                            ■他の作品 <br/>
+                                            （良ければ見てください）
+                                        </div>
+                                    <HashLink to="/#works" className="text-blue-500 hover:underline">
+                                        <div className="truncate">
+                                        https://www.andooo.dev/#works
+                                        </div>
+                                    </HashLink>
+                                    </div>
                                 </div>
                             </div>
                         </div>
