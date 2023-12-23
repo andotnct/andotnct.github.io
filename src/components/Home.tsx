@@ -63,15 +63,15 @@ const Home = () => {
                         東京工業高等専門学校 情報工学科 卒業<br />
                         東京大学工学部 システム創成学科 在籍<br />
                         <div>
-                          ■GitHub 
+                          ■GitHub
                           <a href="https://github.com/andotnct" target="_blank">
-                            <p className="text-blue-500 hover:underline" style={{ display: 'inline' }}>https://github.com/andotnct</p>
+                            <p className="text-blue-500 hover:underline pl-2" style={{ display: 'inline' }}>https://github.com/andotnct</p>
                           </a>
                         </div>
                         <div>
                           ■Mail
                           <a href="mailto:ando.hikaru@andooo.dev">
-                            <p className="text-blue-500 hover:underline" style={{ display: 'inline' }}>ando.hikaru@andooo.dev</p>
+                            <p className="text-blue-500 hover:underline pl-2" style={{ display: 'inline' }}>ando.hikaru@andooo.dev</p>
                           </a>
                         </div>
                       </div>
