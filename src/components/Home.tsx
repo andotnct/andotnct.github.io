@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Header from "./Header";
 import BackgroundMovie from "./BackgroundMovie";
 import Work from "./Work";
+import Achievement from "./Achievement";
 import Modal from 'react-modal';
 import Helmet from 'react-helmet';
 import Skill from "./Skill";
@@ -80,7 +81,7 @@ const Home = () => {
             </div>
           <div className="md:h-screen relative" id="works" style={{ minHeight: '840px'}}>
             <div className="flex justify-center flex-col items-center">
-              <div className="shadow-xl bg-black bg-opacity-70 mt-20 text-white font-bold text-5xl md:text-5xl px-16 md:px-20 py-1 rounded-full">
+              <div className="shadow-xl bg-black bg-opacity-70 mt-20 text-white font-bold text-3xl md:text-5xl md:text-5xl px-8 md:px-20 py-1 rounded-full">
                 WORKS
               </div>
               <div className="flex-col">
@@ -95,6 +96,23 @@ const Home = () => {
               </div>
             </div>
           </div>
+          <div className="relative" id="achievement" style={{minHeight: '588px'}}>
+            <div className="flex justify-center flex-col items-center">
+              <div className="shadow-xl bg-black bg-opacity-70 mt-20 text-white font-bold text-3xl md:text-5xl md:text-5xl px-8 md:px-20 py-1 rounded-full">
+                ACHIEVEMENT
+              </div>
+              <div className="flex-col">
+                <div className="my-8 md:flex">
+                  <Achievement title="AtCoder" explanation="競技プログラミングのAtCoderです。すぐに水色ぐらいまでいく方もいるようですが自分はそのタイプではなかったのでコツコツ頑張ります。モチベに波がありますが、いつかガッツリ精進したいと考えています。" link="https://atcoder.jp/users/and0oo?lang=ja" img="./achievementImg/AtCoder.jpg"/>
+                  <Achievement title="Kaggle" explanation="AIの精度で競い合う競技AI?のKaggleです。コンペに参加したことはありますが何も実績を残せていないのでいつかメダルを取りたいです。" link="https://www.kaggle.com/and0oo" img="./achievementImg/Kaggle.jpg"/>
+                  <Achievement title="タイピング" explanation="小3ぐらいのときに「今後ずっとPCを使い続けるとしたら絶対タイピングが速い方が良い」と思い、残りの小学校生活を全てタイピング練習に捧げました(?)。普段は平均して10打/秒ほどですが調子の良い時は16打/秒ぐらい出ます。" link="https://sushida.net/" img="./achievementImg/typing.jpg"/>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
           <div className="md:h-screen relative bg-black text-white bg-opacity-80" id="skill" style={{ minHeight: '730px' }}>
             <div className="flex justify-center flex-col items-center">
               <div className="text-5xl font-bold mt-20">

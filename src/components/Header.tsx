@@ -11,72 +11,70 @@ const Header = () => {
     const isRoot = currentPath === "/";
 
     return (
-        <div className="fixed top-0 w-screen z-50 left-0">
-            <div className="h-16 bg-white bg-opacity-70 flex justify-center md:justify-between md:px-64">
-                <div className="hidden md:block flex items-center">
+        <div className="fixed w-screen z-50">
+            <div className="h-16 bg-white bg-opacity-70 justify-center items-center flex">
+                <div className="text-sm md:text-4xl font-bold">
                     {isRoot ? (
                         <AnchorLink href="#top">
-                            <button>
-                                <img src="/icon.jpg" className="w-12 h-12 my-2" alt="icon" />
-                            </button>
-                        </AnchorLink>
-                    ) : (
-                        <HashLink to="/#top">
-                            <button>
-                                <img src="/icon.jpg" className="w-12 h-12 my-2" alt="icon" />
-                            </button>
-                        </HashLink>
-                    )}
-                </div>
-                <div className="flex items-center text-xl md:text-4xl font-bold">
-                    {isRoot ? (
-                        <AnchorLink href="#top">
-                            <button className="px-2 py-3 hover:bg-gray-800 hover:text-white">
+                            <button className="px-1 md:px-2 py-6 md:py-3 hover:bg-gray-800 hover:text-white duration-200">
                                 TOP
                             </button>
                         </AnchorLink>
                     ) : (
                         <HashLink to="/#top">
-                            <button className="px-2 py-3 hover:bg-gray-800 hover:text-white">
+                            <button className="px-1 md:px-2 py-6 md:py-3 hover:bg-gray-800 hover:text-white duration-200">
                                 TOP
                             </button>
                         </HashLink>
                     )}
                     {isRoot ? (
                         <AnchorLink href="#profile">
-                            <button className="px-2 py-3 hover:bg-gray-800 hover:text-white">
+                            <button className="px-1 md:px-2 py-6 md:py-3 hover:bg-gray-800 hover:text-white duration-200">
                                 PROFILE
                             </button>
                         </AnchorLink>
                     ) : (
                         <HashLink to="/#profile">
-                            <button className="px-2 py-3 hover:bg-gray-800 hover:text-white">
+                            <button className="px-1 md:px-2 py-6 md:py-3 hover:bg-gray-800 hover:text-white duration-200">
                                 PROFILE
                             </button>
                         </HashLink>
                     )}
                     {isRoot ? (
                         <AnchorLink href="#works">
-                            <button className="px-2 py-3 hover:bg-gray-800 hover:text-white">
+                            <button className="px-1 md:px-2 py-6 md:py-3 hover:bg-gray-800 hover:text-white duration-200">
                                 WORKS
                             </button>
                         </AnchorLink>
                     ) : (
                         <HashLink to="/#works">
-                            <button className="px-2 py-3 hover:bg-gray-800 hover:text-white">
+                            <button className="px-1 md:px-2 py-6 md:py-3 hover:bg-gray-800 hover:text-white duration-200">
                                 WORKS
                             </button>
                         </HashLink>
                     )}
                     {isRoot ? (
+                        <AnchorLink href="#achievement">
+                            <button className="px-1 md:px-2 py-6 md:py-3 hover:bg-gray-800 hover:text-white duration-200">
+                                ACHIEVEMENT
+                            </button>
+                        </AnchorLink>
+                    ) : (
+                        <HashLink to="/#achievement">
+                            <button className="px-1 md:px-2 py-6 md:py-3 hover:bg-gray-800 hover:text-white duration-200">
+                                ACHIEVEMENT
+                            </button>
+                        </HashLink>
+                    )}
+                    {isRoot ? (
                         <AnchorLink href="#skill">
-                            <button className="px-2 py-3 hover:bg-gray-800 hover:text-white">
+                            <button className="px-1 md:px-2 py-6 md:py-3 hover:bg-gray-800 hover:text-white duration-200">
                                 SKILL
                             </button>
                         </AnchorLink>
                     ) : (
                         <HashLink to="/#skill">
-                            <button className="px-2 py-3 hover:bg-gray-800 hover:text-white">
+                            <button className="px-1 md:px-2 py-6 md:py-3 hover:bg-gray-800 hover:text-white duration-200">
                                 SKILL
                             </button>
                         </HashLink>
