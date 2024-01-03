@@ -32,9 +32,15 @@ const Purokiso = () => {
                       </div>
                       <div className="w-8/12">
                         <div className="text-base md:text-2xl md:mt-8">
-                            <div>
+                            <div className="flex flex-col justify-center items-center">
                                 <div>
-                                    作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明作品の説明
+                                    3D空間内を自由に動き回り、空中にお絵かきができるツール「Air Art」を作成しました
+                                </div>
+                                <div>
+                                    Unity不使用、UE不使用、WebGL不使用、ほぼElm Onlyです（とある機能だけJavaScript）
+                                </div>
+                                <div>
+                                    このツールはまだまだ未完成なので、今後もアップデートを続けていこうと思います
                                 </div>
                             </div>
                             <div className="md:flex flex-col items-center">
