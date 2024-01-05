@@ -30,7 +30,7 @@ const Purokiso = () => {
                             「Air Art」
                         </div>
                       </div>
-                      <div className="w-8/12">
+                      <div className="w-10/12">
                         <div className="text-base md:text-2xl md:mt-8">
                             <div className="flex flex-col justify-center items-center">
                                 <div>
