@@ -85,12 +85,12 @@ const Home = () => {
                 WORKS
               </div>
               <div className="flex-col">
-                <div className="my-8 md:flex">
+                <div className="my-8 md:flex justify-center">
                     <Work title="Andooo's Portfolio" explanation="このホームページです。フロントの技術を身につけたいと思い作り始め、背景の動画はAviUtlで作っています。スマホで見た時にも違和感のないデザインとなるようレスポンシブ対応させるのに苦労しました。" useTech="Node.js, TypeScript, React, Tailwind CSS" link="https://andooo.dev" linktext="https://andooo.dev" codelink="https://github.com/andotnct/andotnct.github.io" img="./worksImg/homepage.png"/>
                     <Work title="タイピングゲーム（仮" explanation="ユーザーのタイピング記録からゴーストを生成し、擬似的にタイピング対決ができるゲームを開発中です。進捗があり次第アップデートしていきます。" useTech="Unity, C#" link="/andotyping" linktext="https://www.andooo.dev/andotyping" codelink="https://github.com/andotnct/andotyping" img="./worksImg/typing.jpg"/>
-                    <Work title="千手観音キャンバス" explanation="いくつもの線が同時に描画される不思議なペイントツールをElmで開発しました。Elmは関数型言語の一種ですが、最初は高専時代の友人に関数型言語を強く推されDiscordでHaskellの講義をしてもらったのが始まりです。 if文もfor文もない言語に戸惑いつつも、手続き型言語とは違った脳の使い方をすることで楽しさを見出しプログラミングへの視野を広げることもできました。" useTech="Elm" link="https://elmcanvas.andooo.dev/" linktext="https://elmcanvas.andooo.dev/" codelink="https://github.com/andotnct/ElmCanvas" img="./worksImg/ElmCanvas.jpg"/>
+                    <Work title="千手観音キャンバス" explanation="いくつもの線が同時に描画される不思議なペイントツールをElmで開発しました。Elmは関数型言語の一種ですが、最初は高専時代の友人に関数型言語を強く推されDiscordでHaskellの講義をしてもらったのが始まりです。 if文もfor文もない言語に戸惑いつつも、手続き型言語とは違った脳の使い方をすることで楽しさを見出しプログラミングへの視野を広げることもできました。" useTech="Elm" link="https://elmcanvas.andooo.dev/" linktext="https://elmcanvas.andooo.dev/" codelink="https://github.com/andotnct/ElmCanvas" img="./worksImg/ElmCanvas.jpg"/>    
                 </div>
-                <div className="my-8 md:flex">
+                <div className="my-8 md:flex justify-center">
                   <Work title="AirArt" explanation="3D空間を自由に動き回り、空中にお絵かきができるペイントツール「AirArt」を開発しました。大学のJavaの授業の自由制作課題用に開発しましたが、「言語は何でも良い」と言われたのでElmで開発しました。elm-3d-sceneを活用して3Dのエンティティモデルを作成し、一部の機能で乱数を使用することでElmが副作用をどのように扱っているかを学ぶことができました。追加したい機能が大量にあるので気が向いたらアップデートしていきます。" useTech="Elm, JavaScript(一部機能)" link="https://airart.andooo.dev/" linktext="https://airart.andooo.dev/" codelink="https://github.com/andotnct/AirArt" img="./worksImg/AirArt.jpg"/>
                   <Work title="Vegeoku紹介動画" explanation="第33回高専プロコンに出場した際に制作した作品紹介動画です。中学の頃は無限に動画編集に時間を捧げていましたがこんなところで役立てて良かったです。強力すぎるメンバーのおかげで、本戦では特別賞と企業賞をいただくことができました。" useTech="AviUtl" link="https://www.youtube.com/watch?v=fOkGEEy6dAE" linktext="https://www.youtube.com/watch?v=fOkGEEy6dAE" codelink={null} img="./worksImg/vegeoku.jpg"/>  
                 </div>
