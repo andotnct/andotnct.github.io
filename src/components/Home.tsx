@@ -88,9 +88,10 @@ const Home = () => {
                 <div className="my-8 md:flex">
                     <Work title="Andooo's Portfolio" explanation="このホームページです。フロントの技術を身につけたいと思い作り始め、背景の動画はAviUtlで作っています。スマホで見た時にも違和感のないデザインとなるようレスポンシブ対応させるのに苦労しました。" useTech="Node.js, TypeScript, React, Tailwind CSS" link="https://andooo.dev" linktext="https://andooo.dev" codelink="https://github.com/andotnct/andotnct.github.io" img="./worksImg/homepage.png"/>
                     <Work title="タイピングゲーム（仮" explanation="ユーザーのタイピング記録からゴーストを生成し、擬似的にタイピング対決ができるゲームを開発中です。進捗があり次第アップデートしていきます。" useTech="Unity, C#" link="/andotyping" linktext="https://www.andooo.dev/andotyping" codelink="https://github.com/andotnct/andotyping" img="./worksImg/typing.jpg"/>
+                    <Work title="千手観音キャンバス" explanation="いくつもの線が同時に描画される不思議なペイントツールをElmで開発しました。Elmは関数型言語の一種ですが、最初は高専時代の友人に関数型言語を強く推されDiscordでHaskellの講義をしてもらったのが始まりです。 if文もfor文もない言語に戸惑いつつも、手続き型言語とは違った脳の使い方をすることで楽しさを見出しプログラミングへの視野を広げることもできました。" useTech="Elm" link="https://elmcanvas.andooo.dev/" linktext="https://elmcanvas.andooo.dev/" codelink="https://github.com/andotnct/ElmCanvas" img="./worksImg/ElmCanvas.jpg"/>
                 </div>
                 <div className="my-8 md:flex">
-                  <Work title="千手観音キャンバス" explanation="いくつもの線が同時に描画される不思議なペイントツールをElmで開発しました。Elmは関数型言語の一種ですが、最初は高専時代の友人に関数型言語を強く推されDiscordでHaskellの講義をしてもらったのが始まりです。 if文もfor文もない言語に戸惑いつつも、手続き型言語とは違った脳の使い方をすることで楽しさを見出しプログラミングへの視野を広げることもできました。" useTech="Elm" link="https://elmcanvas.andooo.dev/" linktext="https://elmcanvas.andooo.dev/" codelink="https://github.com/andotnct/ElmCanvas" img="./worksImg/ElmCanvas.jpg"/>
+                  <Work title="AirArt" explanation="3D空間を自由に動き回り、空中にお絵かきができるペイントツール「AirArt」を開発しました。大学のJavaの授業の自由制作課題用に開発しましたが、「言語は何でも良い」と言われたのでElmで開発しました。elm-3d-sceneを活用して3Dのエンティティモデルを作成し、一部の機能で乱数を使用することでElmが副作用をどのように扱っているかを学ぶことができました。追加したい機能が大量にあるので気が向いたらアップデートしていきます。" useTech="Elm, JavaScript(一部機能)" link="https://airart.andooo.dev/" linktext="https://airart.andooo.dev/" codelink="https://github.com/andotnct/AirArt" img="./worksImg/AirArt.jpg"/>
                   <Work title="Vegeoku紹介動画" explanation="第33回高専プロコンに出場した際に制作した作品紹介動画です。中学の頃は無限に動画編集に時間を捧げていましたがこんなところで役立てて良かったです。強力すぎるメンバーのおかげで、本戦では特別賞と企業賞をいただくことができました。" useTech="AviUtl" link="https://www.youtube.com/watch?v=fOkGEEy6dAE" linktext="https://www.youtube.com/watch?v=fOkGEEy6dAE" codelink={null} img="./worksImg/vegeoku.jpg"/>  
                 </div>
               </div>
@@ -105,14 +106,11 @@ const Home = () => {
                 <div className="my-8 md:flex">
                   <Achievement title="AtCoder" explanation="競技プログラミングのAtCoderです。すぐに水色ぐらいまでいく方もいるようですが自分はそのタイプではなかったのでコツコツ頑張ります。モチベに波がありますが、いつかガッツリ精進したいと考えています。" link="https://atcoder.jp/users/and0oo?lang=ja" img="./achievementImg/AtCoder.jpg"/>
                   <Achievement title="Kaggle" explanation="AIの精度で競い合う競技AI?のKaggleです。コンペに参加したことはありますが何も実績を残せていないのでいつかメダルを取りたいです。" link="https://www.kaggle.com/and0oo" img="./achievementImg/Kaggle.jpg"/>
-                  <Achievement title="タイピング" explanation="小3ぐらいのときに「今後ずっとPCを使い続けるとしたら絶対タイピングが速い方が良い」と思い、残りの小学校生活を全てタイピング練習に捧げました(?)。普段は平均して10打/秒ほどですが調子の良い時は16打/秒ぐらい出ます。" link="https://sushida.net/" img="./achievementImg/typing.jpg"/>
+                  <Achievement title="タイピング" explanation="小3ぐらいのときに「今後ずっとPCを使い続けるとしたら絶対タイピングが速い方が良い」と思い、残りの小学校生活を全てタイピング練習に捧げました(?)。普段は平均して10打/秒ほどですが調子が良ければ16打/秒ぐらいです。" link="https://sushida.net/" img="./achievementImg/typing.jpg"/>
                 </div>
               </div>
             </div>
           </div>
-
-
-
           <div className="md:h-screen relative bg-black text-white bg-opacity-80" id="skill" style={{ minHeight: '730px' }}>
             <div className="flex justify-center flex-col items-center">
               <div className="text-5xl font-bold mt-20">
@@ -133,8 +131,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-
-              <div className="flex flex-col justify-center items-center mt-20">
+              <div className="flex flex-col justify-center items-center mt-10">
                 <div className="md:flex md:justify-center md:items-center md:my-2">
                   <div className="flex">
                     <Skill language="HTML" img="languageLogo/HTML.jpg"/>
@@ -174,11 +171,16 @@ const Home = () => {
                   </div>
                   <div className="flex">
                     <Skill language="Tailwind" img="languageLogo/Tailwind.jpg"/>
+                  </div>
+                </div>
+                <div className="md:flex md:justify-center md:items-center my-2">
+                  <div className="flex">
                     <Skill language="GitHub" img="languageLogo/GitHub.jpg"/>
+                    <Skill language="AWS" img="languageLogo/AWS.jpg"/>
                   </div>
                   <div className="flex">
-                    <Skill language="AWS" img="languageLogo/AWS.jpg"/>
                     <Skill language="Docker" img="languageLogo/Docker.jpg"/>
+                    <Skill language="Firebase" img="languageLogo/Firebase.jpg"/>                    
                   </div>
                   <div className="flex">
                     <Skill language="Unity" img="languageLogo/Unity.jpg"/>

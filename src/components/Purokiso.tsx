@@ -45,39 +45,27 @@ const Purokiso = () => {
                             </div>
                             <div className="md:flex flex-col items-center">
                                 <div className="md:flex items-center md:mt-8">
-                                    <div className="md:flex">
+                                    <div className="md:flex truncate">
                                         ■デモ 
-                                            <a href="https://airart.andooo.dev" target="_blank">
-                                                <div className="truncate">
-                                                    <p className="text-blue-500 hover:underline pl-3" style={{ display: 'inline' }}>https://airart.andooo.dev/</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                </div>
-                                    <div className="md:flex items-center md:mt-8">
-                                        <div className="md:flex">
-                                        ■ソースコード 
-                                            <a href="https://github.com/andotnct/AirArt/blob/main/src/AirArt.elm" target="_blank">
-                                                <div className="truncate">
-                                                    <p className="text-blue-500 hover:underline pl-3" style={{ display: 'inline' }}>https://github.com/andotnct/AirArt/blob/main/src/AirArt.elm</p>
-                                                </div>
-                                            </a>
-                                        </div>
+                                        <a href="https://airart.andooo.dev" target="_blank">
+                                            <p className="text-blue-500 hover:underline pl-3" style={{ display: 'inline' }}>https://airart.andooo.dev/</p>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div className="md:flex items-center md:mt-8">
-                                    <div className="md:flex">
-                                        <div className="hidden md:block">
-                                            ■他の作品（良ければ見てください）
-                                        </div>
-                                        <div className="md:hidden">
-                                            ■他の作品 <br/>
-                                            （良ければ見てください）
-                                        </div>
-                                    <HashLink to="/#works" className="text-blue-500 hover:underline">
-                                        <div className="truncate">
-                                        https://www.andooo.dev/#works
-                                        </div>
-                                    </HashLink>
+                                    <div className="md:flex truncate">
+                                        ■ソースコード 
+                                        <a href="https://github.com/andotnct/AirArt/blob/main/src/AirArt.elm" target="_blank">
+                                            <p className="text-blue-500 hover:underline pl-3" style={{ display: 'inline' }}>https://github.com/andotnct/AirArt/blob/main/src/AirArt.elm</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="md:flex items-center md:mt-8">
+                                    <div className="md:flex truncate">
+                                        ■このサイトのソースコード 
+                                        <a href="https://github.com/andotnct/andotnct.github.io/blob/master/src/components/Purokiso.tsx" target="_blank">
+                                            <p className="text-blue-500 hover:underline pl-3" style={{ display: 'inline' }}>https://github.com/andotnct/andotnct.github.io/blob/master/src/components/Purokiso.tsx</p>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
