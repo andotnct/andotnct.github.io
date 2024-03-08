@@ -93,6 +93,7 @@ const Home = () => {
                 <div className="my-8 md:flex justify-center">
                   <Work title="AirArt" explanation="3D空間を自由に動き回り、空中にお絵かきができるペイントツール「AirArt」を開発しました。大学のJavaの授業の自由制作課題用に開発しましたが、「言語は何でも良い」と言われたのでElmで開発しました。elm-3d-sceneを活用して3Dのエンティティモデルを作成し、一部の機能で乱数を使用することでElmが副作用をどのように扱っているかを学ぶことができました。追加したい機能が大量にあるので気が向いたらアップデートしていきます。" useTech="Elm, JavaScript(一部機能)" link="https://airart.andooo.dev/" linktext="https://airart.andooo.dev/" codelink="https://github.com/andotnct/AirArt" img="./worksImg/AirArt.jpg"/>
                   <Work title="Vegeoku紹介動画" explanation="第33回高専プロコンに出場した際に制作した作品紹介動画です。中学の頃は無限に動画編集に時間を捧げていましたがこんなところで役立てて良かったです。強力すぎるメンバーのおかげで、本戦では特別賞と企業賞をいただくことができました。" useTech="AviUtl" link="https://www.youtube.com/watch?v=fOkGEEy6dAE" linktext="https://www.youtube.com/watch?v=fOkGEEy6dAE" codelink={null} img="./worksImg/vegeoku.jpg"/>  
+                  <Work title="AquaMind" explanation="東京大学×SoftBank『UGIP Data Hackathon 2024』に向けて開発したものです。ブルーカーボンをテーマにし、石垣島周辺の衛星画像と底生分類のデータセットから海草の分布を予測するAIモデルを作成し、宮古島で予測した結果をWebサイト上で可視化しました。自分はデータセット作成とフロントエンドを担当し、協力なメンバーのおかげで優勝することができました。" useTech="AviUtl" link="https://aqua-mind.net/" linktext="https://aqua-mind.net/" codelink={null} img="./worksImg/AquaMind.jpg"/>  
                 </div>
               </div>
             </div>
